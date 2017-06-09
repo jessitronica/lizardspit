@@ -26,11 +26,16 @@ public class RestServiceOutOfContainerIntegrationTests {
 
     @Before
     public void setup() {
-        mockMvc = MockMvcBuilders.webAppContextSetup(applicationContext).build();
+        mockMvc =
+                MockMvcBuilders.webAppContextSetup(applicationContext).build();
     }
 
     @Test
     public void canPerformSimpleGetRequestOnMicroservice() throws Exception {
-        mockMvc.perform(get("/")).andExpect(status().isOk()).andExpect(content().contentType("text/plain;charset=UTF-8")).andExpect(content().string("Hello REST Microservice World")).andReturn();
+        mockMvc.perform(get("/")).
+                andExpect(status().isOk()).
+                andExpect(content().contentType("text/plain;charset=UTF-8")).
+                andExpect(content().string("Hello Atomist World")).
+                andReturn();
     }
 }
