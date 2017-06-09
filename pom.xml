@@ -44,8 +44,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.atomist</groupId>
-            <artifactId>geecon-lib</artifactId>
+            <groupId>com.jessitron</groupId>
+            <artifactId>survey-source</artifactId>
             <version>0.1.0</version>
         </dependency>
     </dependencies>
