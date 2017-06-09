@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>satellite-of-love</groupId>
     <artifactId>poo</artifactId>
-    <version>0.1.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>lizardspit</name>
     <description>my new project</description>
