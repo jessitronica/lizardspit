@@ -145,7 +145,7 @@
     </build>
     <repositories>
         <repository>
-            <id>public-atomist-release</id>
+            <id>public-atomist-release-demo</id>
             <name>Atomist Release</name>
             <url>https://atomist.jfrog.io/atomist/libs-release-demo</url>
             <snapshots>
