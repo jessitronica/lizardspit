@@ -48,6 +48,11 @@
             <artifactId>survey-source</artifactId>
             <version>0.1.0</version>
         </dependency>
+    	<dependency>
+            <groupId>com.atomist</groupId>
+            <artifactId>spring-boot-agent</artifactId>
+            <version>0.1.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -129,6 +134,13 @@
                     </imageTags>
                 </configuration>
             </plugin>
+        	<plugin>
+    <groupId>pl.project13.maven</groupId>
+    <artifactId>git-commit-id-plugin</artifactId>
+    <configuration>
+        <verbose>false</verbose>
+    </configuration>
+</plugin>
         </plugins>
     </build>
     <repositories>
@@ -136,6 +148,14 @@
             <id>public-atomist-release</id>
             <name>Atomist Release</name>
             <url>https://atomist.jfrog.io/atomist/libs-release-demo</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    	<repository>
+            <id>public-atomist-release</id>
+            <name>Atomist Release</name>
+            <url>https://atomist.jfrog.io/atomist/libs-release</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
