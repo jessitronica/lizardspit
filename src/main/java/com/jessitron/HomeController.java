@@ -14,7 +14,7 @@ public class HomeController {
         return "Hello Atomist World";
     }
 
-    GetYourSurveysHere thing = new GetYourSurveysHere();
+    private GetYourSurveysHere thing = new GetYourSurveysHere();
 
 
         @CrossOrigin()
