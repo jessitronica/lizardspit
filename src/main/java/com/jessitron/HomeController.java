@@ -17,7 +17,7 @@ public class HomeController {
     private GetYourSurveysHere thing = new GetYourSurveysHere();
 
 
-        @CrossOrigin()
+        @CrossOrigin(origins = "http://localhost:8000")
         @RequestMapping(path = "/survey")
         public Survey survey(@RequestParam(value = "seed") int seed)
         {
